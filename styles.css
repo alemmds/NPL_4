@@ -1,0 +1,258 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4caf50; /* Cor verde musgo */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.container {
+    display: flex;
+}
+
+/* Menu Lateral */
+.menu {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+/* Estilo das Seções */
+.section {
+    display: none; /* Para controle de visibilidade */
+    padding: 20px;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.section h2 {
+    color: #4caf50;
+}
+
+/* Estilos dos Formulários */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4caf50; /* Cor do botão de adicionar */
+    color: white;
+    padding: 12px 20px; /* Aumentar o padding para um botão mais destacado */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px; /* Tamanho da fonte aumentado para melhor legibilidade */
+    width: 100%; /* Botão ocupa a largura total do formulário */
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para botões de envio em modo de edição */
+button[type="submit"].editing {
+    background-color: orange;
+}
+
+/* Estilos da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.button-edit,
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-edit {
+    background-color: #2196F3;
+}
+
+.button-edit:hover {
+    background-color: #1976D2;
+}
+
+.button-delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilos dos Botões de Ação */
+.actions {
+    display: flex;
+    justify-content: center; /* Centraliza os botões de ação */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px; /* Margem superior para separar dos dados */
+}
+
+.data-button {
+    background-color: #1a73e8; /* Cor azul mais escura */
+    color: white;
+    padding: 12px 20px; /* Padding maior */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%; /* Ocupa a largura total do container */
+    text-align: center;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+.data-button:hover {
+    background-color: #135cb2; /* Efeito hover azul mais escuro */
+}
+
+/* Estilo específico para os botões de ação de editar e excluir */
+.button-edit,
+.button-delete {
+    padding: 12px 20px; /* Aumentando o padding para botões maiores */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    width: 100%; /* Ocupa toda a largura */
+    text-align: center;
+}
+
+.button-edit {
+    background-color: #4caf50; /* Cor verde para editar */
+    color: white;
+}
+
+.button-edit:hover {
+    background-color: #45a049; /* Efeito hover para o botão editar */
+}
+
+.button-delete {
+    background-color: #f44336; /* Cor vermelha para excluir */
+    color: white;
+}
+
+.button-delete:hover {
+    background-color: #d32f2f; /* Efeito hover para excluir */
+}
+
+/* Campo de busca */
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    background-color: #4caf50; /* Cor do botão de busca */
+    color: white;
+    padding: 12px 20px; /* Aumentando o padding para maior destaque */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px; /* Tamanho da fonte aumentado para melhor legibilidade */
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Muda a direção do layout em telas menores */
+    }
+    .menu {
+        width: 100%; /* Menu ocupa toda a largura na tela menor */
+    }
+}
+
+/* Estilos para os botões de itens e informações */
+.item-actions {
+    display: flex;
+    flex-direction: column; /* Botões em coluna */
+    margin-bottom: 10px; /* Espaçamento entre os grupos de botões */
+}
+
+/* Botão de item */
+.item-actions .data-button {
+    width: 100%; /* Ocupa a largura total */
+    margin-bottom: 10px; /* Espaçamento entre botões */
+}
+
+/* Botões de editar e excluir */
+.item-actions .button-edit,
+.item-actions .button-delete {
+    width: 100%; /* Botões ocupam 100% da largura */
+    margin-bottom: 10px; /* Espaçamento entre os botões */
+}
